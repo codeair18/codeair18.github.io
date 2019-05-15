@@ -4,6 +4,9 @@
   background-attachment: fixed;
   background-position: center; }
 
+hr {
+  border-top: 1px solid black; }
+
 body {
   background: black;
   color: white;
@@ -94,4 +97,35 @@ input[type=checkbox] {
     width: 50%;
     height: 30px;
     background: linear-gradient(to right bottom, #d33132 50%, rgba(0, 0, 0, 0) 50%);
+    content: " "; }
+
+#bonus-logo {
+  z-index: 2; }
+
+.info-award {
+  width: 100%;
+  height: auto;
+  background: #d33132;
+  color: white;
+  position: relative;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-align: center; }
+  .info-award span {
+    font-size: 20px; }
+  .info-award:before {
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    width: 50%;
+    height: 30px;
+    background: linear-gradient(to left top, #d33132 50%, rgba(0, 0, 0, 0) 50%);
+    content: " "; }
+  .info-award:after {
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    width: 50%;
+    height: 30px;
+    background: linear-gradient(to right top, #d33132 50%, rgba(0, 0, 0, 0) 50%);
     content: " "; }

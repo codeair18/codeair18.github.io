@@ -1,0 +1,163 @@
+$infoBoxColor: #d33132;
+$gray: #767374;
+
+#lp2-body {
+  background-image: url('../img/kostki.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+hr {
+  border-top: 1px solid black;
+}
+
+body {
+  background: black;
+  color: white;
+  padding: 20px 100px;
+}
+
+#img_studio {
+  position: absolute;
+  top: 150px;
+  left: 530px;
+  height: 604px;
+}
+
+#pijanowski-img {
+  position: relative;
+  top: -80px;
+}
+
+#studio {
+  position: absolute;
+  background-image: url('../img/studio2.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 110% 100px
+}
+
+#lead-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+input[type=checkbox] {
+  width: 30px;
+  height: 30px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.text-gray {
+  color: $gray;
+}
+
+.bottom-dotted {
+  border-bottom: 4px dotted white;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+
+  border-top: 15px solid #f00;
+}
+
+.custom-btn {
+  background-color: rgba(0, 0, 0, 1);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info-box {
+  width: 100%;
+  height: auto;
+  background: $infoBoxColor;
+  color: white;
+  position: relative;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-align: center;
+  span {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  &:before {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 50%;
+    height: 30px;
+    background: linear-gradient(to left bottom, $infoBoxColor 50%, rgba(0, 0, 0, 0) 50%);
+    content: " ";
+  }
+
+  &:after {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 50%;
+    height: 30px;
+    background: linear-gradient(to right bottom, $infoBoxColor 50%, rgba(0, 0, 0, 0) 50%);
+    content: " ";
+  }
+
+}
+#bonus-logo {
+  z-index: 2;
+}
+
+.info-award {
+  width: 100%;
+  height: auto;
+  background: $infoBoxColor;
+  color: white;
+  position: relative;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-align: center;
+  span {
+    font-size: 20px;
+  }
+
+  &:before {
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    width: 50%;
+    height: 30px;
+    background: linear-gradient(to left top, $infoBoxColor 50%, rgba(0, 0, 0, 0) 50%);
+    content: " ";
+  }
+
+  &:after {
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    width: 50%;
+    height: 30px;
+    background: linear-gradient(to right top, $infoBoxColor 50%, rgba(0, 0, 0, 0) 50%);
+    content: " ";
+  }
+
+}

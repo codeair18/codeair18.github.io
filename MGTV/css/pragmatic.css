@@ -1,0 +1,68 @@
+body {
+  background: black;
+  color: white; }
+
+input[type=checkbox] {
+  width: 30px;
+  height: 30px; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.bold {
+  font-weight: bold; }
+
+.text-gray {
+  color: #767374; }
+
+.bottom-dotted {
+  border-bottom: 4px dotted white; }
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #f00; }
+
+.custom-btn {
+  background-color: black;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.info-box {
+  width: 100%;
+  height: auto;
+  background: #d33132;
+  color: white;
+  position: relative;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-align: center; }
+  .info-box span {
+    font-weight: bold;
+    font-size: 20px; }
+  .info-box:before {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 50%;
+    height: 30px;
+    background: linear-gradient(to left bottom, #d33132 50%, rgba(0, 0, 0, 0) 50%);
+    content: " "; }
+  .info-box:after {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 50%;
+    height: 30px;
+    background: linear-gradient(to right bottom, #d33132 50%, rgba(0, 0, 0, 0) 50%);
+    content: " "; }

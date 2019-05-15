@@ -1,0 +1,83 @@
+$infoBoxColor: #d33132;
+$gray: #767374;
+
+body {
+  background: black;
+  color: white;
+}
+
+input[type=checkbox] {
+  width:30px; height:30px;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.bold {
+  font-weight: bold;
+}
+
+.text-gray {
+  color: $gray;
+}
+
+.bottom-dotted {
+  border-bottom: 4px dotted white;
+}
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+
+  border-top: 15px solid #f00;
+}
+
+.custom-btn {
+  background-color: rgba(0,0,0,1);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info-box {
+  width: 100%;
+  height: auto;
+  background: $infoBoxColor;
+  color: white;
+  position: relative;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-align: center;
+  span {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  &:before {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 50%;
+    height: 30px;
+    background: linear-gradient(to left bottom, $infoBoxColor 50%, rgba(0, 0, 0, 0) 50%);
+    content: " ";
+  }
+
+  &:after {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 50%;
+    height: 30px;
+    background: linear-gradient(to right bottom, $infoBoxColor 50%, rgba(0, 0, 0, 0) 50%);
+    content: " ";
+  }
+
+}

@@ -99,7 +99,7 @@ input[type=checkbox] {
   text-align: center;
   span {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 17px;
   }
 
   &:before {
@@ -123,8 +123,15 @@ input[type=checkbox] {
   }
 
 }
-#bonus-logo {
-  z-index: 2;
+.bonus-div {
+  display: flex;
+  justify-content: center;
+  img {
+    z-index: 2;
+    height: 200px;
+    width: 200px;
+  }
+
 }
 
 .info-award {
@@ -137,7 +144,7 @@ input[type=checkbox] {
   border-radius: 5px;
   text-align: center;
   span {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   &:before {

@@ -81,7 +81,7 @@ input[type=checkbox] {
   text-align: center; }
   .info-box span {
     font-weight: bold;
-    font-size: 20px; }
+    font-size: 17px; }
   .info-box:before {
     position: absolute;
     left: 0;
@@ -99,8 +99,13 @@ input[type=checkbox] {
     background: linear-gradient(to right bottom, #d33132 50%, rgba(0, 0, 0, 0) 50%);
     content: " "; }
 
-#bonus-logo {
-  z-index: 2; }
+.bonus-div {
+  display: flex;
+  justify-content: center; }
+  .bonus-div img {
+    z-index: 2;
+    height: 200px;
+    width: 200px; }
 
 .info-award {
   width: 100%;
@@ -112,7 +117,7 @@ input[type=checkbox] {
   border-radius: 5px;
   text-align: center; }
   .info-award span {
-    font-size: 20px; }
+    font-size: 17px; }
   .info-award:before {
     position: absolute;
     left: 0;

@@ -4,14 +4,38 @@ $gray: #767374;
 body {
   background: black;
   color: white;
+  padding: 20px 100px;
+}
+
+#img_studio{
+  position: absolute;
+  top: 100px;
+  height: 800px;
+}
+
+#studio {
+  position: absolute;
+  background-image: url('../img/studio2.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 110% 100px
+}
+
+#lead-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 input[type=checkbox] {
-  width:30px; height:30px;
+  width: 30px;
+  height: 30px;
 }
+
 .uppercase {
   text-transform: uppercase;
 }
+
 .bold {
   font-weight: bold;
 }
@@ -23,6 +47,7 @@ input[type=checkbox] {
 .bottom-dotted {
   border-bottom: 4px dotted white;
 }
+
 .arrow-down {
   width: 0;
   height: 0;
@@ -33,7 +58,7 @@ input[type=checkbox] {
 }
 
 .custom-btn {
-  background-color: rgba(0,0,0,1);
+  background-color: rgba(0, 0, 0, 1);
   border: none;
   color: white;
   text-align: center;

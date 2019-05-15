@@ -1,6 +1,24 @@
 body {
   background: black;
-  color: white; }
+  color: white;
+  padding: 20px 100px; }
+
+#img_studio {
+  position: absolute;
+  top: 100px;
+  height: 800px; }
+
+#studio {
+  position: absolute;
+  background-image: url("../img/studio2.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 110% 100px; }
+
+#lead-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
 
 input[type=checkbox] {
   width: 30px;

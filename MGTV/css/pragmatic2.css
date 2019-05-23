@@ -1,16 +1,20 @@
 #lp2-body {
-  background-image: url("../img/kostki.png");
+  background-image: url("../img/LP2_tlo.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center; }
+  background-position: center;
+  padding-top: 50px; }
 
 hr {
   border-top: 1px solid black; }
 
 body {
   background: black;
-  color: white;
-  padding: 20px 100px; }
+  color: white; }
+
+@media only screen and (min-width: 600px) {
+  body {
+    overflow: hidden; } }
 
 #img_studio {
   position: absolute;
@@ -19,8 +23,8 @@ body {
   height: 604px; }
 
 #pijanowski-img {
-  position: relative;
-  top: -80px; }
+  position: absolute;
+  top: -200px; }
 
 #studio {
   position: absolute;
@@ -32,7 +36,8 @@ body {
 #lead-form {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  top: -100px; }
 
 input[type=checkbox] {
   width: 30px;
@@ -73,10 +78,10 @@ input[type=checkbox] {
 .info-box {
   width: 100%;
   height: auto;
-  background: #d33132;
+  background: #e60e27;
   color: white;
   position: relative;
-  padding: 10px 25px;
+  padding: 10px 25px 0px 25px;
   border-radius: 5px;
   text-align: center; }
   .info-box span {
@@ -88,7 +93,7 @@ input[type=checkbox] {
     top: 100%;
     width: 50%;
     height: 30px;
-    background: linear-gradient(to left bottom, #d33132 50%, rgba(0, 0, 0, 0) 50%);
+    background: linear-gradient(to left bottom, #e60e27 50%, rgba(0, 0, 0, 0) 50%);
     content: " "; }
   .info-box:after {
     position: absolute;
@@ -96,21 +101,32 @@ input[type=checkbox] {
     top: 100%;
     width: 50%;
     height: 30px;
-    background: linear-gradient(to right bottom, #d33132 50%, rgba(0, 0, 0, 0) 50%);
+    background: linear-gradient(to right bottom, #e60e27 50%, rgba(0, 0, 0, 0) 50%);
     content: " "; }
 
 .bonus-div {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  position: relative;
+  top: 40px; }
   .bonus-div img {
     z-index: 2;
     height: 200px;
     width: 200px; }
 
+@media only screen and (max-width: 600px) {
+  .info-box span {
+    font-size: 17px !important; } }
+
+.info-dane {
+  top: 500px; }
+  .info-dane span {
+    font-size: 12px; }
+
 .info-award {
   width: 100%;
   height: auto;
-  background: #d33132;
+  background: #e60e27;
   color: white;
   position: relative;
   padding: 10px 25px;
@@ -124,7 +140,7 @@ input[type=checkbox] {
     bottom: 100%;
     width: 50%;
     height: 30px;
-    background: linear-gradient(to left top, #d33132 50%, rgba(0, 0, 0, 0) 50%);
+    background: linear-gradient(to left top, #e60e27 50%, rgba(0, 0, 0, 0) 50%);
     content: " "; }
   .info-award:after {
     position: absolute;
@@ -132,5 +148,5 @@ input[type=checkbox] {
     bottom: 100%;
     width: 50%;
     height: 30px;
-    background: linear-gradient(to right top, #d33132 50%, rgba(0, 0, 0, 0) 50%);
+    background: linear-gradient(to right top, #e60e27 50%, rgba(0, 0, 0, 0) 50%);
     content: " "; }

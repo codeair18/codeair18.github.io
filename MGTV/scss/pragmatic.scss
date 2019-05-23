@@ -4,7 +4,12 @@ $gray: #767374;
 body {
   background: black;
   color: white;
-  padding: 20px 100px;
+  //padding: 20px 100px;
+  background-image: url('../img/LP1_tlo_oryginal.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 227px 60px;
+  background-size: 1500px;
 }
 
 #img_studio {
@@ -15,22 +20,36 @@ body {
 }
 
 #pijanowski-img {
-  position: relative;
+  position: absolute;
   top: -80px;
 }
 
 #studio {
-  position: absolute;
-  background-image: url('../img/studio2.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 110% 100px
+  margin-top: -70px;
+}
+
+@media only screen and (max-width: 600px) {
+  .info-box {
+    span {
+      font-size: 17px !important;
+    }
+
+  }
+
+}
+
+.info-dane {
+  span {
+    font-size: 12px;
+  }
 }
 
 #lead-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: flex-end;
+  margin-top: 65px;
+
 }
 
 input[type=checkbox] {
@@ -88,7 +107,7 @@ input[type=checkbox] {
   text-align: center;
   span {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 35px;
   }
 
   &:before {

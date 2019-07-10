@@ -24,6 +24,15 @@ body {
   top: -80px;
 }
 
+@media only screen and (max-width: 767px) {
+
+  #pijanowski-img {
+    top: -150px;
+    left: 17%;
+    height: 450px !important;
+  }
+}
+
 #studio {
   margin-top: -70px;
 }
